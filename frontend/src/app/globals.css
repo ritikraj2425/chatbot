@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #fff;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f8f4f4;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-luckiest-guy {
+    font-family: var(--font-luckiestGuy);
+  }
+}
+
+
+@keyframes bounce-slow-down {
+  0% { transform: translateY(0); }
+  10% { transform: translateY(400px); }
+  20% { transform: translateY(0px); }
+  30% { transform: translateY(350px); }
+  40% { transform: translateY(0px); }
+  50% { transform: translateY(250px); }
+  60% { transform: translateY(0px); }
+  70% { transform: translateY(200px); }
+  80% { transform: translateY(0px); }
+  85% { transform: translateY(150px); }
+  90% { transform: translateY(0px); }
+  93% { transform: translateY(100px); }
+  95% { transform: translateY(0px); }
+  97% { transform: translateY(50px); }
+  100% { transform: translateY(0px); }
+}
+
