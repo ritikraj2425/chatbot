@@ -24,7 +24,7 @@ const luckiestGuy = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Depression AI",
+  title: "Chatbot",
   description: "Created by Ritik",
 };
 
