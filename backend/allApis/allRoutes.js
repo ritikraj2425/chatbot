@@ -1,3 +1,4 @@
 const AuthenticationRoutes = require('./authentication')
 const historyRoute =  require('./history')
-module.exports = [AuthenticationRoutes,historyRoute]
+const UpdateUserRoutes = require('./update')
+module.exports = [AuthenticationRoutes,historyRoute, UpdateUserRoutes]
